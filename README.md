@@ -1,6 +1,30 @@
 # hiRollr
 A gambling bankroll management and assistant app
 
+Programmer: Alex Balayan, Carlitos Carmona  - Class: CS481 Intro to Mobile Programming - 
+Final Project Files: 
+Activity Koitlin files
+
+MainActivity.kt - Alex Balayan
+LoginActivity.kt - Carlitos Carmona
+RegisterActivity.kt - Carlitos Carmona
+DashboardActivity.kt - Alex Balayan
+VenueActivity.kt - Alex Balayan
+SessionActivity.kt - Alex Balayan
+PLayActivity.kt - Alex Balayan
+ResultActivity.kt - Alex Balayan
+
+XML files
+
+activity_main.xml
+activity_login.xml
+activity_register.xml
+activity_dashboard.xml
+activity_venue.xml
+activity_session.xml
+activity_play.xml
+activity_results.xml
+
 
 This readme file is accociated with the Hirollr android application created by Alex and Carlitos.
 The application consists of koitlin files, xml files, color, and style files. Our android app 
