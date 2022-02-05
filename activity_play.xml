@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="#1F1C26"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="185dp">
+
+        <TextView
+            android:id="@+id/playSessionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#FF988989"
+            android:text="Current Session" />
+
+        <TextView
+            android:id="@+id/regionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF988989"
+            android:text="Region" />
+
+        <!-- <TextView
+            android:id="@+id/venueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venue" /> -->
+
+        <TextView
+            android:id="@+id/gameTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF988989"
+            android:text="GameType" />
+
+        <!-- <TextView
+            android:id="@+id/gameSubtypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SubGame" />  -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bankPanelTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FF988989"
+                    android:background="#38484c"
+                    android:text="Bank View" />
+
+                <TextView
+                    android:id="@+id/walkAmountTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#81A183"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="Walk away at: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/walkAmountNumberDisplay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#81A183"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="$0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/walkAmountTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#81A183"
+                    android:paddingBottom="5dp"
+                    android:textSize="18sp"
+                    android:text="Total in Bank" />
+
+                <TextView
+                    android:id="@+id/buyInPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#F1CB7E"
+                    android:paddingTop="20dp"
+                    android:textSize="18sp"
+                    android:text="Buy In Amount: " />
+
+                <TextView
+                    android:id="@+id/buyInNumberDisplay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#F1CB7E"
+                    android:paddingBottom="35dp"
+                    android:paddingTop="5dp"
+                    android:text="$0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/lossLimitPanel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E38080"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:text="Loss Limit"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lossNumberDisplay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#E38080"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="30sp"
+                    android:text="$0" />
+
+                <TextView
+                    android:id="@+id/lossLimitPanel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#E38080"
+                    android:paddingBottom="5dp"
+                    android:textSize="18sp"
+                    android:text="Total in Bank" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lineBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text=" "
+                android:textColor="#FF988989"
+                android:background="#1F1C26"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profitPanelTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:textColor="#FF988989"
+                    android:background="#38484c"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Profit View" />
+
+                <TextView
+                    android:id="@+id/walkAmountTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#81A183"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:text="Walk away at: " />
+
+                <TextView
+                    android:id="@+id/walkAmountNumberDisplay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:background="#81A183"
+                    android:text="$0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/walkAmountTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#81A183"
+                    android:paddingBottom="5dp"
+                    android:textSize="18sp"
+                    android:text="Profit Gain" />
+
+                <TextView
+                    android:id="@+id/earningsPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F1CB7E"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="34dp"
+                    android:text="Play in \n Progress"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/lossLimitPanel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#E38080"
+                    android:textSize="18sp"
+                    android:paddingTop="5dp"
+                    android:text="Loss Limit" />
+
+                <TextView
+                    android:id="@+id/lossNumberDisplay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#E38080"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="$0"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/lossLimitPanel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#E38080"
+                    android:paddingBottom="5dp"
+                    android:textSize="18sp"
+                    android:text="Profit Loss" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sessionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                app:backgroundTint="#CE2A5E"
+                android:text="Session Settings" />
+
+            <TextView
+                android:id="@+id/spaceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="" />
+
+            <Button
+                android:id="@+id/endButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="00dp"
+                android:layout_weight="1"
+                app:backgroundTint="#CE2A5E"
+                android:text="  End Session  "
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

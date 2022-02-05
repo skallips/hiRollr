@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1C26"
+    tools:context=".SessionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buyInTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#988989"
+                android:text="Buy In: $"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/buyInEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#988989"
+                android:background="#2C273C"
+                android:inputType="numberDecimal"
+                android:text="0" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/willingToLoseTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#988989"
+                android:text="Willing to lose: $"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/willingToLoseEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#988989"
+                android:background="#2C273C"
+                android:inputType="numberDecimal"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/profitTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#988989"
+                android:text="Profit Goal of: $"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/profitGoalEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#988989"
+                android:background="#2C273C"
+                android:inputType="numberDecimal"
+                android:text="0" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/luckTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Luck Level: 0%"
+            android:textColor="#988989"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/noLuckTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="Not Lucky" />
+
+            <SeekBar
+                android:id="@+id/luckSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/prettyLuckyTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="Pretty Lucky" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comfortTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textColor="#988989"
+            android:text="Comfort Level: 0%"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/noComfortTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="Not Comfy" />
+
+            <SeekBar
+                android:id="@+id/comfortSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:outlineAmbientShadowColor="#CE2A5E"
+                android:outlineSpotShadowColor="#CE2A5E"
+                android:scrollbarThumbHorizontal="@color/purple_200"
+                android:scrollbarThumbVertical="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/veryComfyTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="Very Comfy" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sobrietyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:textColor="#988989"
+            android:text="Sobriety Level: 0%"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/drunkTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="I'm Drunk" />
+
+            <SeekBar
+                android:id="@+id/sobrietySeekBar"
+                android:layout_width="250dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/soberTitle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#988989"
+                android:text="I'm Sober" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/venueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                app:backgroundTint="#CE2A5E"
+                android:text="Venue Settings" />
+
+            <TextView
+                android:id="@+id/spaceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="" />
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="00dp"
+                android:layout_weight="1"
+                app:backgroundTint="#CE2A5E"
+                android:text="        PLAY!        " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

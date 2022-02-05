@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".RegisterActivity">
+
+    <!-- implement scroll view -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <!-- Create linear layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+            <!-- Create title -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textSize="50dp" />
+            <!-- Create text fields for each field required -->
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/login"
+                android:drawableLeft="@drawable/login"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:padding="10dp" />
+            <!-- Create text fields for each field required -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/login"
+                android:drawableLeft="@drawable/login"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:padding="10dp" />
+            <!-- Create text fields for each field required -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/login"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+            <!-- Create text fields for each field required -->
+            <EditText
+                android:id="@+id/cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/login_edit_background"
+                android:drawableStart="@drawable/pass"
+                android:drawableLeft="@drawable/login"
+                android:drawablePadding="10dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+            <!-- Once fields have entered text the user can submit their
+             information and access the dashboard activity-->
+            <Button
+                android:id="@+id/subButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:text="Create an Account"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+            <!-- Sign in button returns to main login screen where the user
+            can re-enter their credentials -->
+            <Button
+                android:id="@+id/logButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

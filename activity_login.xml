@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+    <!-- Import my login theme background for the app above -->
+    <!-- Import my button theme for buttons -->
+    <!-- Create a scroll view so that the text can still be read after keyboard pops up -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <!-- Linear Layout -->
+        <!-- set the orientation for the layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <!-- Create title for application -->
+            <EditText
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HiRollr"
+                android:textSize="50dp"
+                android:background="@null"/>
+            <!-- Insert an image/logo -->
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/gambling"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Edit text for the username text field -->
+            <EditText
+                android:id="@+id/username"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/login"
+                android:hint="Username"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/login" />
+
+            <!-- Edit text for the password text field -->
+            <EditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/pass"
+                android:hint="Password"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/login" />
+
+            <!--android:id="@+id/forgotpass"
+           -->
+            <!-- Created a text view not a button for usability purpose -->
+            <TextView
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:padding="10dp"
+                android:layout_gravity="end"/>
+            <!-- Create button for the login after entering information -->
+            <Button
+                android:id="@+id/logButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Log in"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textSize="21sp"/>
+            <!-- Create button for registering into the app  -->
+            <Button
+                android:id="@+id/regButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Register"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:textAllCaps="false"
+                android:textSize="21sp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
