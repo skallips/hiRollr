@@ -46,10 +46,4 @@ A DocumentActivity was ultimately not included in the program due to time constr
 data generated from the ResultsActivity and store it in a data structure that the user can access via their accound. The ability to review past sessions 
 would have also be accessible from the DashboardActivity.
 
-This program was created using AndroidStudio and was tested using a Pixel 3 virtual device.  This program also utilizes custom jpeg images created for logo and navigation displays.  
-
-
-
-
-
-
+This program was created using AndroidStudio and was tested using a Pixel 3 virtual device.  This program also utilizes custom jpeg images created for logo and navigation displays.  XML files were also included as required for project submission for the class.  Although the majority of styling elements are mostly consistent throughout the project as a whole, there are some customizations within select activities for better display functionality.
