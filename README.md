@@ -30,26 +30,26 @@ This readme file is accociated with the Hirollr android application created by A
 The application consists of koitlin files, xml files, color, and style files. Our android app 
 functions as a tool for gamblers who aren't controlled in their spending habits. Hirollr can assist
 new and experienced gamblers become more responsible. Gambling alone can become very risky overtime 
-but having HiRollr can save you time and money.The application consists of a mainactivity.kt cover page
-with a logo for our application. Once the user chooses the start button they will enter the next 
-activity which is the loginActivity.kt file , here the file contains a title for the application as well as
-a logo and input fields for the user to log in. The loginactivity.kt file contains two buttons that redirect the
-user into the RegisterActivity.kt file with the Register button or into the DashboardActivity.kt if the user 
-directly logins into the app.If the user chooses to register then the register button will direct The 
-user to RegisterActivity.kt file constaining 4 input text fields for user input and a create an account button 
-that will direct the user to the dashboard.kt. If the user chooses the sign in button then the user redirects
-themselves to the LoginActivity.kt where they are prompted to enter username and password. When the user has arrived
-to the dashboardActivity.kt file, then the user can start a session on Hirollr. The dashboardActivity.kt will now 
-redirect to the venueActivity.kt where the user has option to choose their region they want their casino to be
-in. Once the region has been chosen the user can access a list of cities in that region. A list of games will be
-available for the city in that region. Once the game has been selected then you can proceed with the NEXT button
-or return to dashboardActivity.kt using the back button. If the user selects the Next button then they become redirected
-to the sessionActivity.kt where the user has various field to interact with. The user can set buy in prices, how much
-the buyer is willing to loose, how much profit the gambler would like to make. Also there is a section which contain 
-percentages about your luck, comfortable, and sobriety. These percentages can be adjusted by the user. The user can then 
-select the play button which will take you to the playActivity.kt file where the application will display your current 
-profit odds and current bank amount if you choose to play any of the conditions chosen. When the user has finished 
-reasding their results they can click the session settings button to return to the sessionsActivity.kt or the user can 
-click end the session button and proceed to the ResultsActivity.kt where the user can now see how much they have gained
- or lossed based on the results. When the user clicks the back to play button they will return to the SessionsActivity.kt. 
-If the user clicks on the  Finished button than the user now exits the application and returns to mainActivity.kt
+but having HiRollr can save you time and money.
+
+The various kotlin activities contain various tasks:
+MainActivity - start of the application, the home page
+LoginActivity - user signs into account
+RegisterActivity - new users enter information to create account
+DashboardActivity - sub start menu to direct users to register or start a gambling session
+VenueActivity - User selects a casino venue and game type to start gambling session
+SessionActivity - User selects gambling amounts, thresholds, and external factor settings to calculate their projected stopping point
+PlayActivity - Displays to user the calculated amounts of thresholds and walk-away projection amount
+ResultsActivity - User completes play session and enters ending amounts, displays whether goals were met or if thresholds were crossed
+
+A DocumentActivity was ultimately not included in the program due to time constraints and implementation complications.  This activity would then take the 
+data generated from the ResultsActivity and store it in a data structure that the user can access via their accound. The ability to review past sessions 
+would have also be accessible from the DashboardActivity.
+
+This program was created using AndroidStudio and was tested using a Pixel 3 virtual device.  This program also utilizes custom jpeg images created for logo and navigation displays.  
+
+
+
+
+
+
